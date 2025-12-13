@@ -1,0 +1,81 @@
+## DynamoDB Table: dice-rolls (describe-table)
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "source",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "timestamp",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "dice-rolls",
+        "KeySchema": [
+            {
+                "AttributeName": "source",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "timestamp",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2025-12-10T15:42:13.664000+00:00",
+:
+
+## EC2 Instance – csd215-flask-instance (describe-instances)
+
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0b87bfaf2ddc70cb8",
+            "OwnerId": "992382494331",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2025-12-13T03:34:32+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e3c6d55d9ac86089"
+                            }
+                        }
+                    ],
+                    "ClientToken": "4c8ffdfe-d2b1-44c8-9dcc-d9ffff3f3bdc",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+:
+
+## Lambda Function – csd215-lambda (get-function)
+
+{
+    "Configuration": {
+        "FunctionName": "csd215-lambda",
+        "FunctionArn": "arn:aws:lambda:us-east-1:992382494331:function:csd215-lambda",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::992382494331:role/LabRole",
+        "Handler": "app.lambda_app.main",
+        "CodeSize": 2093,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2025-12-13T04:09:41.000+0000",
+        "CodeSha256": "XhkWOSPqdCUIkVHN/Y7uPFUMA02LrskBCzflnsE7oUA=",
+        "Version": "$LATEST",
+        "VpcConfig": {
+            "SubnetIds": [
+                "subnet-005191ea8cbb2a234"
+            ],
+            "SecurityGroupIds": [
+                "sg-0bcb9a85fbef860f4"
+            ],
+:

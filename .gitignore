@@ -7,8 +7,11 @@ __pycache__
 *.tfvars.json
 terraform.tfstate
 terraform.tfstate.backup
+
 .venv
 
 lambda_package
 lambda_function.zip
 lambda-out.txt
+
+*.pem
