@@ -26,3 +26,32 @@
         "CreationDateTime": "2025-12-10T15:42:13.664000+00:00",
 :
 
+## EC2 Instance – csd215-flask-instance (describe-instances)
+
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0b87bfaf2ddc70cb8",
+            "OwnerId": "992382494331",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2025-12-13T03:34:32+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e3c6d55d9ac86089"
+                            }
+                        }
+                    ],
+                    "ClientToken": "4c8ffdfe-d2b1-44c8-9dcc-d9ffff3f3bdc",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+:
+
